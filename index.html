@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lebron Parsell | Resume</title>
+  <meta name="description" content="Resume website for Lebron Parsell, a William & Mary student researcher working on technology, security, policy, and public-facing analysis.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Lebron Parsell">
+  <link rel="canonical" href="https://lebronparsell-cpu.github.io/resume/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lebron Parsell | Resume">
+  <meta property="og:description" content="Lebron Parsell is a William & Mary student researcher focused on technology, security, policy, and clear public-facing analysis.">
+  <meta property="og:url" content="https://lebronparsell-cpu.github.io/resume/">
+  <meta property="og:site_name" content="Lebron Parsell Resume">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lebron Parsell | Resume">
+  <meta name="twitter:description" content="Student researcher at William & Mary with experience in policy research, defense-related project work, and public speaking.">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lebron Parsell",
+      "email": "mailto:lebronparsell@gmail.com",
+      "telephone": "+1-540-892-8201",
+      "url": "https://lebronparsell-cpu.github.io/resume/",
+      "jobTitle": "Student Researcher",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Williamsburg",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "William & Mary"
+        }
+      ],
+      "knowsLanguage": ["English", "Spanish"],
+      "knowsAbout": [
+        "Policy research",
+        "National security",
+        "Emerging technology",
+        "Nuclear governance",
+        "Chinese development finance"
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #07130f;
+      --bg-soft: #0d1d16;
+      --panel: rgba(13, 29, 22, 0.9);
+      --panel-2: rgba(17, 36, 27, 0.96);
+      --text: #edf2ee;
+      --muted: #bfd0c4;
+      --green: #4ca16f;
+      --green-soft: #86c8a0;
+      --gold: #c8a24f;
+      --gold-soft: #ead39b;
+      --line: rgba(232, 211, 155, 0.18);
+      --line-strong: rgba(232, 211, 155, 0.38);
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+      --radius: 24px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(76, 161, 111, 0.16), transparent 30%),
+        radial-gradient(circle at top right, rgba(200, 162, 79, 0.14), transparent 24%),
+        linear-gradient(140deg, #06100c 0%, #0b1812 55%, #08120d 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 92%);
+      opacity: 0.3;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .page {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(7, 17, 12, 0.76);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 16px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .crest {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line-strong);
+      color: var(--gold-soft);
+      background: radial-gradient(circle at top, rgba(200, 162, 79, 0.28), rgba(76, 161, 111, 0.08));
+      letter-spacing: 0.08em;
+      font-size: 0.88rem;
+    }
+
+    .brand strong,
+    h1, h2, h3 {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 0.97rem;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--gold-soft);
+    }
+
+    .panel,
+    .timeline-card,
+    .callout,
+    .tab-panel,
+    .fact-card {
+      background: var(--panel);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .hero {
+      padding: 52px 0 28px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.95fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-copy {
+      padding: 38px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-copy::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -70px;
+      bottom: -90px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200, 162, 79, 0.2), transparent 70%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--gold-soft);
+      background: rgba(200, 162, 79, 0.08);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      line-height: 0.95;
+      max-width: 11ch;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+      max-width: 58ch;
+      margin: 0 0 22px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 18px;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, #b98b33 100%);
+      color: #09110d;
+      font-weight: 700;
+    }
+
+    .button-secondary {
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .fact-card {
+      padding: 18px;
+      background: rgba(10, 22, 16, 0.78);
+    }
+
+    .fact-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--green-soft);
+      font-size: 1.3rem;
+    }
+
+    .fact-card span {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    .hero-side {
+      padding: 26px;
+      display: grid;
+      gap: 18px;
+      background:
+        linear-gradient(180deg, rgba(16, 34, 25, 0.97), rgba(9, 20, 15, 0.94)),
+        radial-gradient(circle at top right, rgba(76, 161, 111, 0.12), transparent 36%);
+    }
+
+    .portrait-wrap {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      aspect-ratio: 1 / 1;
+      background: #142219;
+    }
+
+    .portrait-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .portrait-wrap:hover img {
+      transform: scale(1.04);
+    }
+
+    .portrait-badge {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(7, 14, 10, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--gold-soft);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .profile-block h2 {
+      margin: 0 0 8px;
+      font-size: 1.35rem;
+    }
+
+    .profile-block p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.97rem;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .mini-item {
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mini-item:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .mini-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--gold-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+    }
+
+    .mini-item span {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    main section {
+      padding: 20px 0 24px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+    }
+
+    .section-head p {
+      margin: 0;
+      max-width: 58ch;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .tab-button {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+    }
+
+    .tab-button.active,
+    .tab-button:hover {
+      background: rgba(200, 162, 79, 0.12);
+      color: var(--gold-soft);
+      border-color: var(--line-strong);
+    }
+
+    .tab-panels {
+      position: relative;
+    }
+
+    .tab-panel {
+      display: none;
+      padding: 26px;
+    }
+
+    .tab-panel.active {
+      display: block;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .tab-panel h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: var(--gold-soft);
+    }
+
+    .tab-panel p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 64ch;
+    }
+
+    .tab-panel ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-card {
+      padding: 24px;
+      background: var(--panel-2);
+      border-left: 4px solid var(--green);
+    }
+
+    .timeline-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .timeline-card h3 {
+      margin: 0 0 6px;
+      font-size: 1.25rem;
+    }
+
+    .timeline-role {
+      margin: 0;
+      color: var(--gold-soft);
+      font-size: 0.97rem;
+    }
+
+    .timeline-date {
+      color: var(--muted);
+      white-space: nowrap;
+      font-size: 0.92rem;
+      padding-top: 3px;
+    }
+
+    .timeline-summary {
+      margin: 14px 0 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    .detail-toggle {
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .detail-toggle:hover {
+      border-color: var(--line-strong);
+      color: var(--gold-soft);
+    }
+
+    .detail-list {
+      list-style: disc;
+      padding-left: 18px;
+      margin: 16px 0 0;
+      color: var(--muted);
+      line-height: 1.72;
+      display: none;
+    }
+
+    .timeline-card.open .detail-list {
+      display: block;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .detail-list li + li {
+      margin-top: 8px;
+    }
+
+    .writing-card {
+      padding: 0;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(200, 162, 79, 0.08), rgba(76, 161, 111, 0.05)),
+        var(--panel-2);
+    }
+
+    .writing-card summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 26px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .writing-card summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .writing-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: var(--gold-soft);
+    }
+
+    .writing-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+      max-width: 62ch;
+    }
+
+    .writing-pill {
+      flex-shrink: 0;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: var(--gold-soft);
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 0.92rem;
+    }
+
+    .writing-card[open] .writing-pill {
+      background: rgba(200, 162, 79, 0.12);
+    }
+
+    .writing-body {
+      padding: 0 28px 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .writing-body ul {
+      margin: 18px 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .writing-body li + li {
+      margin-top: 8px;
+    }
+
+    .writing-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 18px 0 20px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .block {
+      padding: 28px;
+    }
+
+    .entry + .entry {
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .entry h3 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+    }
+
+    .meta {
+      color: var(--gold-soft);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .entry p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    .skill-grid,
+    .award-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .tile {
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .tile h3 {
+      margin: 0 0 10px;
+      color: var(--gold-soft);
+      font-size: 1.05rem;
+    }
+
+    .tile p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .callout {
+      margin: 28px 0 84px;
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      background:
+        linear-gradient(135deg, rgba(200, 162, 79, 0.12), rgba(76, 161, 111, 0.08)),
+        var(--panel);
+    }
+
+    .callout h2 {
+      margin: 0 0 10px;
+      font-size: 1.45rem;
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.72;
+      max-width: 58ch;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      min-width: 280px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 12px;
+    }
+
+    .contact-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .contact-row strong {
+      color: var(--text);
+    }
+
+    .contact-row a,
+    .contact-row span {
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 0 0 42px;
+      color: rgba(237, 242, 238, 0.58);
+      font-size: 0.88rem;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: rise 0.85s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.08s; }
+    .delay-2 { animation-delay: 0.16s; }
+    .delay-3 { animation-delay: 0.24s; }
+
+    @keyframes rise {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .two-col,
+      .skill-grid,
+      .award-grid,
+      .fact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head,
+      .topbar-inner,
+      .timeline-top,
+      .callout,
+      .contact-row {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .timeline-date {
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page,
+      .topbar-inner {
+        width: min(var(--max), calc(100% - 20px));
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .hero-copy,
+      .hero-side,
+      .block,
+      .tab-panel,
+      .timeline-card,
+      .callout {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 2.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="crest">LP</div>
+        <div>
+          <strong>Lebron Parsell</strong>
+          <span>Student researcher • she/her</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#mentions">Mentions</a>
+        <a href="#focus">Focus</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page">
+    <section class="hero">
+      <div class="hero-copy panel reveal">
+        <div class="eyebrow">Policy, research, and public-facing analysis</div>
+        <h1>Lebron Parsell</h1>
+        <p class="lead">
+          Lebron is a William &amp; Mary student studying government with a declared minor in data science.
+          She works on research and project teams connected to security, technology, and public policy, and
+          she brings a concise, clear writing style to complicated topics.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-secondary" href="#experience">See Experience</a>
+        </div>
+        <div class="fact-grid">
+          <div class="fact-card">
+            <strong>4.0 GPA</strong>
+            <span>Government major at William &amp; Mary with a declared data science minor.</span>
+          </div>
+          <div class="fact-card">
+            <strong>Research-led</strong>
+            <span>Current work includes nuclear policy, Chinese finance, and defense-related project research.</span>
+          </div>
+          <div class="fact-card">
+            <strong>Strong speaker</strong>
+            <span>State champion in extemporaneous speaking with experience presenting to groups and stakeholders.</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-side panel reveal delay-1" id="about">
+        <div class="portrait-wrap">
+          <img src="headshot.png" alt="Headshot of Lebron Parsell">
+          <div class="portrait-badge">Williamsburg, Virginia</div>
+        </div>
+        <div class="profile-block">
+          <h2>About</h2>
+          <p>
+            She is especially interested in work that sits between research, technology, and public service.
+            Her background combines careful reading, analytical writing, and speaking clearly to different audiences.
+          </p>
+        </div>
+        <div class="mini-list">
+          <div class="mini-item">
+            <strong>Pronouns</strong>
+            <span>She/her</span>
+          </div>
+          <div class="mini-item">
+            <strong>Languages</strong>
+            <span>English and Spanish</span>
+          </div>
+          <div class="mini-item">
+            <strong>Looking for</strong>
+            <span>Roles and internships in research, policy, technology, and defense-related public service.</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <main>
+      <section id="mentions">
+        <div class="section-head reveal">
+          <h2>Public Mentions</h2>
+        </div>
+        <div class="two-col">
+          <div class="block panel reveal delay-1">
+            <div class="entry">
+              <h3><a href="https://www.wm.edu/offices/dccenter/opportunities/gsp/currentcohort/american-statecraft/" target="_blank" rel="noopener noreferrer">William &amp; Mary Scholars Page</a></h3>
+              <div class="meta">2025-2026 American Statecraft cohort</div>
+              <p>
+                William &amp; Mary’s scholars page describes Lebron as a Government and Data Science student
+                who is interested in international law and global affairs. The page also notes her work with
+                AidData analyzing Chinese financing in low-income and developing countries.
+              </p>
+            </div>
+          </div>
+          <div class="block panel reveal delay-2">
+            <div class="entry">
+              <h3><a href="https://www.wm.edu/as/about/deans-office/deanslist/2025-spring/index.php" target="_blank" rel="noopener noreferrer">Dean’s List Recognition</a></h3>
+              <div class="meta">William &amp; Mary Arts &amp; Sciences</div>
+              <p>
+                Lebron appears on William &amp; Mary’s Dean’s List pages for <a href="https://www.wm.edu/as/about/deans-office/deanslist/2025-spring/index.php" target="_blank" rel="noopener noreferrer">Spring 2025</a> and <a href="https://www.wm.edu/as/about/deans-office/deanslist/2025-fall/" target="_blank" rel="noopener noreferrer">Fall 2025</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus">
+        <div class="section-head reveal">
+          <h2>What She Works On</h2>
+        </div>
+        <div class="tabs reveal delay-1" role="tablist" aria-label="Focus areas">
+          <button class="tab-button active" data-tab="policy" role="tab" aria-selected="true">Policy Research</button>
+          <button class="tab-button" data-tab="technology" role="tab" aria-selected="false">Technology</button>
+          <button class="tab-button" data-tab="communication" role="tab" aria-selected="false">Communication</button>
+        </div>
+        <div class="tab-panels reveal delay-2">
+          <div class="tab-panel active" data-panel="policy">
+            <h3>Policy Research</h3>
+            <p>
+              Lebron’s work is grounded in close reading, careful sourcing, and writing that makes dense material easier to understand.
+              She has researched U.S. statecraft, nuclear policy, and Chinese development finance through both academic and project-based work.
+            </p>
+            <ul>
+              <li>Researches foreign-policy decision-making through the American Statecraft cohort.</li>
+              <li>Studies how finance and policy can shape political influence across regions.</li>
+              <li>Builds written work that connects evidence to practical conclusions.</li>
+            </ul>
+          </div>
+          <div class="tab-panel" data-panel="technology">
+            <h3>Technology</h3>
+            <p>
+              She is drawn to the policy questions that follow new technologies, especially when they affect security, infrastructure, or public institutions.
+              Her recent work includes counter-UAS problem solving and research on fusion and proliferation.
+            </p>
+            <ul>
+              <li>Worked on an Air Force-sponsored project focused on countering unmanned aerial systems at bases.</li>
+              <li>Researches fusion material governance and nuclear proliferation at NukeLab.</li>
+              <li>Uses Stata and R as part of broader research and data workflows.</li>
+            </ul>
+          </div>
+          <div class="tab-panel" data-panel="communication">
+            <h3>Communication</h3>
+            <p>
+              One of Lebron’s clearest strengths is communication. She can move from research to presentation without losing the point,
+              and she is comfortable speaking in both formal and fast-paced settings.
+            </p>
+            <ul>
+              <li>Won the Virginia state title in extemporaneous speaking.</li>
+              <li>Presented legal and policy material to student audiences.</li>
+              <li>Delivered a graduation speech to more than 500 attendees.</li>
+              <li>Has also taken part in dialogue-based programming, including Better Arguments and DG Dialogues work.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-head reveal">
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card reveal delay-1">
+            <div class="timeline-top">
+              <div>
+                <h3>Innovation for Defense</h3>
+                <p class="timeline-role">Air Force Project Team, William &amp; Mary • Williamsburg, Virginia</p>
+              </div>
+              <div class="timeline-date">January 2026 - Present</div>
+            </div>
+            <p class="timeline-summary">
+              Works on a defense-related student project focused on technology questions tied to unmanned aerial systems and base security.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Selected for a Department of Defense-sponsored innovation program.</li>
+              <li>Helped develop and present a minimum viable product using Lean Launchpad methods.</li>
+              <li>Looked at how new military technologies can affect risk, escalation, and use in practice.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal delay-2">
+            <div class="timeline-top">
+              <div>
+                <h3>NukeLab</h3>
+                <p class="timeline-role">Fellow under Professor Jeff Kaplow • Williamsburg, Virginia</p>
+              </div>
+              <div class="timeline-date">May 2025 - Present</div>
+            </div>
+            <p class="timeline-summary">
+              Studies nuclear policy questions, with particular attention to proliferation and the governance issues raised by fusion.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Researches nuclear proliferation and fusion material governance.</li>
+              <li>Authors a literature review on policy implications of next-generation nuclear technologies.</li>
+              <li>Helps connect academic findings to broader policy discussion inside the lab.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal delay-3">
+            <div class="timeline-top">
+              <div>
+                <h3>TUFF Research Assistant</h3>
+                <p class="timeline-role">AidData Tracking Underreported Financial Flows Team • Williamsburg, Virginia</p>
+              </div>
+              <div class="timeline-date">June 2025 - Present</div>
+            </div>
+            <p class="timeline-summary">
+              Researches Chinese development finance and works with official documents to improve reporting on financial flows.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Investigates projects in countries including Costa Rica and Uruguay.</li>
+              <li>Uses source-based analysis to identify more than $100 million in underreported flows.</li>
+              <li>Publishes vetted data to AidData’s global database.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div>
+                <h3>William &amp; Mary Global Scholar</h3>
+                <p class="timeline-role">American Statecraft Cohort • Williamsburg, Virginia</p>
+              </div>
+              <div class="timeline-date">August 2025 - Present</div>
+            </div>
+            <p class="timeline-summary">
+              Takes part in a year-long cohort focused on U.S. statecraft and the study of policy decision-making.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Researches foreign-policy decision-making through archival materials and oral histories.</li>
+              <li>Presents analysis in both academic and practitioner settings.</li>
+              <li>Engages questions around diplomacy, military policy, and economic tools of statecraft.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div>
+                <h3>Student Legal Services</h3>
+                <p class="timeline-role">Student Legislative Advisory Board • Charlottesville, Virginia</p>
+              </div>
+              <div class="timeline-date">August 2024 - December 2024</div>
+            </div>
+            <p class="timeline-summary">
+              Helped students better understand housing rights, contracts, and other practical legal questions.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Conducted legal research with a campus attorney.</li>
+              <li>Presented information to groups of 30+ students.</li>
+              <li>Led outreach efforts that reached more than 200 students.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div>
+                <h3>Extemporaneous Speaking</h3>
+                <p class="timeline-role">Captain • Salem, Virginia</p>
+              </div>
+              <div class="timeline-date">September 2022 - May 2024</div>
+            </div>
+            <p class="timeline-summary">
+              Led a successful speech team and competed in timed speaking rounds on politics and public affairs topics.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Led and coached a 20-member team to first place at the Virginia State Forensics Championship.</li>
+              <li>Won the state title in extemporaneous speaking in 2024.</li>
+              <li>Mentored newer speakers in research, analysis, and public speaking.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div>
+                <h3>Better Arguments Leadership Fellow</h3>
+                <p class="timeline-role">Fellow • Williamsburg, Virginia</p>
+              </div>
+              <div class="timeline-date">August 2025 - Present</div>
+            </div>
+            <p class="timeline-summary">
+              Helps lead dialogue-centered programming focused on civil discourse, storytelling, and public engagement.
+            </p>
+            <button class="detail-toggle" type="button" aria-expanded="false">Show details</button>
+            <ul class="detail-list">
+              <li>Selected as 1 of 18 students for William &amp; Mary’s inaugural Better Arguments cohort.</li>
+              <li>Delivered storytelling workshops, including programming during New Student Orientation.</li>
+              <li>Built experience that also connects with dialogue-based campus work such as DG Dialogues.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="section-head reveal">
+          <h2>Education and Skills</h2>
+        </div>
+        <div class="two-col">
+          <div class="block panel reveal delay-1">
+            <div class="entry">
+              <h3>William &amp; Mary</h3>
+              <div class="meta">B.A. in Government, expected May 2028</div>
+              <p>Declared minor in Data Science. GPA: 4.0. Dean’s List.</p>
+            </div>
+            <div class="entry">
+              <h3>Salem High School</h3>
+              <div class="meta">Diploma, May 2024</div>
+              <p>GPA: 4.56. Honors include Spanish Seal of Biliteracy, Distinguished Scholar, and National Honor Society semifinalist.</p>
+            </div>
+          </div>
+
+          <div class="block panel reveal delay-2">
+            <div class="skill-grid">
+              <div class="tile">
+                <h3>Research Tools</h3>
+                <p>Stata, R, official-document research, literature reviews, and archival work.</p>
+              </div>
+              <div class="tile">
+                <h3>Software</h3>
+                <p>Microsoft Office, Photoshop, and iMovie.</p>
+              </div>
+              <div class="tile">
+                <h3>Languages</h3>
+                <p>English and Spanish.</p>
+              </div>
+              <div class="tile">
+                <h3>Writing</h3>
+                <p>Clear, source-based writing for academic, policy, and presentation settings.</p>
+              </div>
+              <div class="tile">
+                <h3>Speaking</h3>
+                <p>Public speaking, workshops, briefings, and competitive speech experience.</p>
+              </div>
+              <div class="tile">
+                <h3>Community Work</h3>
+                <p>Dialogue-based campus programming, storytelling workshops, and student-facing engagement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block panel reveal delay-3" style="margin-top: 20px;">
+          <div class="award-grid">
+            <div class="tile">
+              <h3>State Champion</h3>
+              <p>VHSL Forensics Extemporaneous Speaking State Champion, 2024.</p>
+            </div>
+            <div class="tile">
+              <h3>Graduation Speaker</h3>
+              <p>Delivered commencement remarks to an audience of more than 500 attendees.</p>
+            </div>
+            <div class="tile">
+              <h3>Dean’s List</h3>
+              <p>Maintained a 4.0 GPA at William &amp; Mary.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing">
+        <div class="section-head reveal">
+          <h2>Writing Sample</h2>
+        </div>
+        <details class="writing-card panel reveal delay-1" open>
+          <summary>
+            <div>
+              <h3>Selected Writing Sample</h3>
+              <p>
+                This sample highlights archival research, policy writing, and source-based analysis on nuclear proliferation and related security questions.
+              </p>
+            </div>
+            <span class="writing-pill">Open / Close</span>
+          </summary>
+          <div class="writing-body">
+            <ul>
+              <li>Shows archival research and close reading of historical and policy sources.</li>
+              <li>Focuses on nuclear proliferation and related security questions.</li>
+              <li>Demonstrates longer-form analytical writing in a format separate from the resume itself.</li>
+            </ul>
+            <div class="writing-actions">
+              <a class="button button-primary" href="writing-sample.pdf" target="_blank" rel="noopener noreferrer">Open Full PDF</a>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section id="contact">
+        <div class="callout reveal">
+          <div>
+            <h2>Open to internships and early-career opportunities</h2>
+            <p>
+              Especially interested in work that values careful research, strong writing, public service,
+              and thoughtful engagement with technology and policy.
+            </p>
+          </div>
+          <div class="contact-list">
+            <div class="contact-row">
+              <strong>Email</strong>
+              <a href="mailto:lebronparsell@gmail.com">lebronparsell@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <strong>Phone</strong>
+              <a href="tel:+15408928201">(540) 892-8201</a>
+            </div>
+            <div class="contact-row">
+              <strong>Location</strong>
+              <span>Williamsburg, Virginia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+  </div>
+
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.tab;
+
+        tabButtons.forEach((item) => {
+          item.classList.toggle("active", item === button);
+          item.setAttribute("aria-selected", item === button ? "true" : "false");
+        });
+
+        tabPanels.forEach((panel) => {
+          panel.classList.toggle("active", panel.dataset.panel === target);
+        });
+      });
+    });
+
+    const detailButtons = document.querySelectorAll(".detail-toggle");
+
+    detailButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".timeline-card");
+        const open = card.classList.toggle("open");
+        button.textContent = open ? "Hide details" : "Show details";
+        button.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    });
+
+    const sections = document.querySelectorAll("main section[id], aside[id]");
+    const navLinks = document.querySelectorAll("nav a");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+        });
+      });
+    }, { rootMargin: "-35% 0px -45% 0px", threshold: 0.1 });
+
+    sections.forEach((section) => observer.observe(section));
+  </script>
+</body>
+</html>
